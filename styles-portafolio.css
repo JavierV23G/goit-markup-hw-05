@@ -55,6 +55,7 @@ nav {
     margin: 0px 0px 0px 93px;
     width: 281px;
     justify-content: space-between;
+    position: relative;
 }
 
 .top-page .container .contact {
@@ -108,6 +109,17 @@ nav {
 
 .portafolio {
     color: var(--color-azul);
+}
+
+.navigation li .portafolio::after {
+    background-color: var(--color-azul);
+    width: 71.3px;
+    height: 4px;
+    content: "";
+    display: block;
+    border-radius: 2px;
+    position: absolute;
+    top: 46px;
 }
 
 .estudio:hover,

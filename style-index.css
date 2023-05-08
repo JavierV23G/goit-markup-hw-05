@@ -50,6 +50,7 @@ nav {
     padding: 0px 0px;
     margin: 0px 0px 0px 93px;
     width: 281px;
+    position: relative;
     justify-content: space-between;
 }
 
@@ -106,6 +107,17 @@ nav {
     color: var(--color-azul);
 }
 
+.navigation li .estudio::after {
+    background-color: var(--color-azul);
+    width: 53.75px;
+    height: 4px;
+    content: "";
+    display: block;
+    border-radius: 2px;
+    position: absolute;
+    top: 46px;
+}
+
 .contactos:hover,
 .portafolio:hover,
 .contactos:focus,
@@ -115,7 +127,7 @@ nav {
     line-height: var(--lineweight-normal);
 }
 
-.top-page .contact .email .icon:hover, 
+.top-page .contact .email .icon:hover,
 .top-page .contact .celphone .icon:hover,
 .top-page .contact .email a:hover,
 .top-page .contact .celphone a:hover {
@@ -207,7 +219,7 @@ nav {
 
 .content2 h2,
 .content3 h2,
-.content4 h2 
+.content4 h2
 {
     font-size: 36px;
     font-style: bold;
@@ -263,7 +275,7 @@ nav {
     width: 212px;
     height: 16px;
 }
-    
+
 /* OUR TEAM */
 .content3 {
     background-color: var(--color-behindourteam);
