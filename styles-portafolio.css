@@ -80,8 +80,6 @@ nav {
     line-height: var(--lineweight-normal);
     color: var(--color-gris);
     fill: var(--color-gris);
-    width: 151px;
-    height: 16px;
 }
 
 .contact .celphone {
@@ -92,12 +90,6 @@ nav {
     line-height: var(--lineweight-normal);
     color: var(--color-gris);
     fill: var(--color-gris);
-    width: 135px;
-    height: 16px;
-}
-
-.contact p {
-    color:currentColor;
 }
 
 .contact .email .icon {
@@ -105,7 +97,6 @@ nav {
     height: 16px;   
     stroke-width: 0;
     align-items: center;
-    fill: currentColor;
 }       
 
 .contact .celphone .icon {
@@ -113,12 +104,11 @@ nav {
     height: 16px;
     stroke-width: 0;
     align-items: center;
-    fill: currentColor;
 }
 
 .contact a:hover {
     color: var(--color-azul);
-    stroke: var(--color-azul);
+    fill: var(--color-azul);
 }
 
 .webstudio,
