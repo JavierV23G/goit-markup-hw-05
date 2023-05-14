@@ -72,13 +72,14 @@ nav {
     flex-basis: calc((100% - 30px) / 2);
 }
 
-.top-page .container .contact li a {
-    flex-basis: calc((100% - 10px) / 2);
-}
-
 .contact .email {
     display: flex;
     align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: var(--lineweight-normal);
+    color: var(--color-gris);
+    fill: var(--color-gris);
     width: 151px;
     height: 16px;
 }
@@ -86,23 +87,38 @@ nav {
 .contact .celphone {
     display: flex;
     align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: var(--lineweight-normal);
+    color: var(--color-gris);
+    fill: var(--color-gris);
     width: 135px;
     height: 16px;
 }
 
 .contact p {
-    color: var(--color-gris);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: var(--lineweight-normal);
+    color:currentColor;
 }
 
-.top-page .container .icon {
+.contact .email .icon {
     width: 20px;
+    height: 16px;   
+    stroke-width: 0;
+    align-items: center;
+    fill: currentColor;
+}       
+
+.contact .celphone .icon {
+    width: 16px;
     height: 16px;
     stroke-width: 0;
     align-items: center;
-    fill: var(--color-gris)
+    fill: currentColor;
+}
+
+.contact a:hover {
+    color: var(--color-azul);
+    stroke: var(--color-azul);
 }
 
 .webstudio,
@@ -182,6 +198,23 @@ nav {
     border: none;
     border-radius: 4px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.backdrop {
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000033;
+    top: 0;
+    left: 0;
+    position: fixed;
+    opacity: 1;
+    z-index: 5;
+    transition: opacity .2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+   opacity: 0;
+   pointer-events: none;
 }
 
 /* DESCRIPTIONS */
