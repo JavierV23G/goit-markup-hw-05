@@ -11,7 +11,8 @@
     refs.backdrop.addEventListener("click", toggleModal);
   
     function toggleModal() {
-      refs.modal.classList.toggle("is-hidden");
       refs.backdrop.classList.toggle("is-hidden");
+      refs.modal.classList.toggle("is-hidden");
+      refs.closeModalBtn.classList.toggle("is-hidden");
     }
   })();
