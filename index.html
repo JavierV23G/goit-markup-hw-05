@@ -62,21 +62,23 @@
     </header>
 
     <main>
-      <section class="backdrop is-hidden" data-backdrop>
-        <form action="" class="modal-form is-hidden" data-modal>
-          <button type="button" class="button-close" data-modal-close>X</button>
-        </form>
-      </section>
-
       <section class="main-title">
         <div class="container">
           <h1>SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
 
-          <ul>
-            <li>
-              <button type="button" data-modal-open>Solicite nuestro servicio</button>
-            </li>
-          </ul>
+              <button class="open__modal" type="button" data-modal-open>Solicite nuestro servicio</button>
+
+              <div class="backdrop is-hidden" data-modal>
+                <div class="modal-form is-hidden">
+
+                <button type="button" class="close__modal button" data-modal-close>
+                  <span class="close__modal vector-close">&times;</span>
+                </button>
+
+                <form action="">
+                </form>
+              </div>    
+            </div>
         </div>
       </section>
 

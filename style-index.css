@@ -172,7 +172,7 @@ nav {
     line-height: 1.4;
 }
 
-.main-title ul button {
+.main-title .open__modal {
     background-color: var(--color-azul);
     color: var(--color-hueso);
     font-weight: 700;
@@ -197,7 +197,7 @@ nav {
     left: 0;
     position: fixed;
     opacity: 1;
-    z-index: 5;
+    z-index: 3;
     transition: opacity .2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -219,15 +219,34 @@ nav {
 }
 
 .modal-form.is-hidden {
-    transform: translateY(200px);
-    opacity: 0;
+    transform: translateY(200);
 }
 
-.button-close {
-    position: absolute;
-    top: 8px;
+.close__modal {
+    position: relative;
+    width: 30px;
+    height: 30px;
     right: 8px;
+    top: 8px;
+    float: right;
+    background: transparent;
+    border: 1px solid #0000001A;
+    border-radius: 50%;
+    cursor: pointer;
 }
+
+.close__modal.vector-close {
+    border: none;
+    top: 3px;
+    right: -7px;
+}
+
+.close__modal:hover, 
+.close__modal:focus {
+    color: var(--color-azul);
+    text-decoration: none;
+    cursor: pointer;
+  }
 
 /* DESCRIPTIONS */
 .content1 {
